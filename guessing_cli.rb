@@ -4,7 +4,7 @@ def run_guessing_game()
   randomnumber = rand[0..7]
   puts "Guess a number between 1 and 6."
   while input != "exit"
-  randomnumber
+  randomnumber = rand[0..7]
   if input.to_i == randomnumber
     puts "You guessed the correct number!"
   else
