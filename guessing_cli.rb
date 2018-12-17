@@ -11,7 +11,7 @@ def run_guessing_game
     end
     num = rand(6)
     binding.pry
-    if num == input.to_i + 1
+    if num == input.to_i - 1
       puts "You guessed the correct number!"
       return "exit"
     else
