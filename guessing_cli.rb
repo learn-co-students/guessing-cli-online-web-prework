@@ -13,7 +13,7 @@ def run_guessing_game
     binding.pry
     if num == input.to_i - 1
       puts "You guessed the correct number!"
-      return "exit"
+      break
     else
       puts "The computer guessed #{num}."
     end
