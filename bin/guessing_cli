@@ -2,4 +2,7 @@
 
 require_relative "../guessing_cli"
 
+
+input = gets.chomp.downcase! 
+
 run_guessing_game
