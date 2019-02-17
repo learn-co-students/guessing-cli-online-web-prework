@@ -2,6 +2,5 @@
 
 require_relative "../guessing_cli"
 
-puts "Guess a number between 1 and 6." 
-input = gets.chomp.downcase! 
-run_guessing_game(input)
+run_guessing_game
+
