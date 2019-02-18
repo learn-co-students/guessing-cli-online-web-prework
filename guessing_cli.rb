@@ -1,9 +1,11 @@
+require 'pry'
+
 def run_guessing_game
-   
+#binding.pry    
   puts "Guess a number between 1 and 6."  
   
   user_input = gets.chomp
-  
+   
   correct_number = rand(1..6) 
   
   while user_input != "exit"
@@ -17,13 +19,15 @@ def run_guessing_game
       user_input.to_i != correct_number
        puts "The computer guessed #{correct_number}."
         puts "Guess a number between 1 and 6." 
-         user_input = gets.chomp
-         
-    elsif user_input == "exit"
-      puts "Goodbye!"
-       
+         user_input = gets.chomp  
+    
+    elsif
+      user_input == "exit"
+        puts "Goodbye!"
+
     end 
-  end 
+  end
+ puts "Goodbye!"  
 end 
     
     
