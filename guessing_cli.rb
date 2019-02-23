@@ -16,7 +16,7 @@ def run_guessing_game
     greet_user
     magic = generate_magic
     input = take_guess
-    if input.to_i === magic 
+    if input.to_i == magic 
       puts "You guessed the correct number!"
     elsif input == "exit"
       break
