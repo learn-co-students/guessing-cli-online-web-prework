@@ -1,5 +1,4 @@
 # Code your solution here!
-
 def run_guessing_game
   input = ""
   num = rand(1..6).to_s
@@ -8,10 +7,9 @@ def run_guessing_game
     input = gets.chomp
     if input == num
       puts "You guessed the correct number!"
-    else input != num
+    elsif input != num
       puts "The computer guessed #{num}."
     end
   end
   puts "Goodbye!"
 end
-#run_guessing_game
