@@ -1,10 +1,10 @@
-
+require 'pry'
 def run_guessing_game
   puts "Guess a number between 1 and 6."
   reply = gets.chomp
   
   guess = rand(1..6)
-  
+  binding.pry
   if reply == "exit"
     puts "Goodbye!"
   elsif reply.to_i == guess
@@ -15,3 +15,4 @@ def run_guessing_game
   end
 end  
   
+run_guessing_game
