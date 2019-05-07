@@ -12,7 +12,6 @@ def run_guessing_game
     case 
     when answer.to_i == rando  
       puts "You guessed the correct number!"
-      answer = "exit"
       
     when answer == "exit"
       puts "Goodbye!"
